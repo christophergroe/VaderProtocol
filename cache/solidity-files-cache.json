@@ -1,0 +1,1113 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\DAO.sol": {
+      "lastModificationDate": 1623462310625,
+      "contentHash": "4855331c6c2fb0e553e422bc0769aaa1",
+      "sourceName": "contracts/DAO.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iVADER.sol",
+        "./interfaces/iRESERVE.sol",
+        "./interfaces/iVAULT.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "DAO"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iVADER.sol": {
+      "lastModificationDate": 1623462310634,
+      "contentHash": "5f577c5a50d2bccf68e1c2cbf2cc5280",
+      "sourceName": "contracts/interfaces/iVADER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVADER"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iRESERVE.sol": {
+      "lastModificationDate": 1623462310632,
+      "contentHash": "0a542a1c47d67d56ba116fb23cee2b38",
+      "sourceName": "contracts/interfaces/iRESERVE.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iRESERVE"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iVAULT.sol": {
+      "lastModificationDate": 1623462310634,
+      "contentHash": "774589b1a1efcfa2d7a302bc2e328ec7",
+      "sourceName": "contracts/interfaces/iVAULT.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVAULT"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iROUTER.sol": {
+      "lastModificationDate": 1623462310633,
+      "contentHash": "52180a2545e4c5d6db024fb3195c1c2c",
+      "sourceName": "contracts/interfaces/iROUTER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iROUTER"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Vault.sol": {
+      "lastModificationDate": 1623462310629,
+      "contentHash": "81da08cf6a99df4c807db007c5dca128",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/SafeERC20.sol",
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iRESERVE.sol",
+        "./interfaces/iROUTER.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iFACTORY.sol",
+        "./interfaces/iSYNTH.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\SafeERC20.sol": {
+      "lastModificationDate": 1623462310630,
+      "contentHash": "333d390b443be228650947b481d47cd3",
+      "sourceName": "contracts/interfaces/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Address",
+        "ExternalERC20",
+        "SafeERC20"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iERC20.sol": {
+      "lastModificationDate": 1623462310630,
+      "contentHash": "6372c7c19986ff61d7f9b76dd4be0e52",
+      "sourceName": "contracts/interfaces/iERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iERC20"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iDAO.sol": {
+      "lastModificationDate": 1623462310630,
+      "contentHash": "5ca21f0ecd3d06f5bf8be5aaf0031972",
+      "sourceName": "contracts/interfaces/iDAO.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iDAO"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iUTILS.sol": {
+      "lastModificationDate": 1623462310634,
+      "contentHash": "a3006401c474e72c14462e84143b8ccf",
+      "sourceName": "contracts/interfaces/iUTILS.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iUTILS"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iPOOLS.sol": {
+      "lastModificationDate": 1623462310632,
+      "contentHash": "e25d7118ef45cb088e911771a701854e",
+      "sourceName": "contracts/interfaces/iPOOLS.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iPOOLS"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iFACTORY.sol": {
+      "lastModificationDate": 1623462310631,
+      "contentHash": "f4403cd99870ff06ed40497181f9cf4b",
+      "sourceName": "contracts/interfaces/iFACTORY.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iFACTORY"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iSYNTH.sol": {
+      "lastModificationDate": 1623462310633,
+      "contentHash": "d333af760fb15ab9922383a86944f351",
+      "sourceName": "contracts/interfaces/iSYNTH.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iSYNTH"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1623463947571,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Utils.sol": {
+      "lastModificationDate": 1623462310628,
+      "contentHash": "d0a991811b49d08b083394df259d1dae",
+      "sourceName": "contracts/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol",
+        "./interfaces/iLENDER.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iFACTORY.sol",
+        "./interfaces/iSYNTH.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iLENDER.sol": {
+      "lastModificationDate": 1623462310631,
+      "contentHash": "3ee733839e5be2725342932b97c53ae2",
+      "sourceName": "contracts/interfaces/iLENDER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iLENDER"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Router.sol": {
+      "lastModificationDate": 1623462310627,
+      "contentHash": "6f54429f620fc095078cc45bbfe451ce",
+      "sourceName": "contracts/Router.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/SafeERC20.sol",
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iRESERVE.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iSYNTH.sol",
+        "./interfaces/iFACTORY.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Router"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Pools.sol": {
+      "lastModificationDate": 1623462310626,
+      "contentHash": "e2a09bb7739e19ace7b99ea6dfdf78b0",
+      "sourceName": "contracts/Pools.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/SafeERC20.sol",
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol",
+        "./interfaces/iFACTORY.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Pools"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\USDV.sol": {
+      "lastModificationDate": 1623462310628,
+      "contentHash": "57026ac21ee1a0b5640de2762cbe4c67",
+      "sourceName": "contracts/USDV.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iERC677.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "USDV"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iERC677.sol": {
+      "lastModificationDate": 1623462310631,
+      "contentHash": "8e15211b84dc701eb2adcc6f442b8993",
+      "sourceName": "contracts/interfaces/iERC677.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iERC677"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Vader.sol": {
+      "lastModificationDate": 1623462310629,
+      "contentHash": "9a067e86d78a5af5021db637be6b5d14",
+      "sourceName": "contracts/Vader.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iERC677.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iUSDV.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Vader"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iUSDV.sol": {
+      "lastModificationDate": 1623462310633,
+      "contentHash": "ba7a27f6e8db532a33d01e1b30393013",
+      "sourceName": "contracts/interfaces/iUSDV.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iUSDV"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Reserve.sol": {
+      "lastModificationDate": 1623462310627,
+      "contentHash": "d5a9d8d4541cb723c81fd482ff693fa7",
+      "sourceName": "contracts/Reserve.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/SafeERC20.sol",
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iUSDV.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Reserve"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Token2.sol": {
+      "lastModificationDate": 1623462310628,
+      "contentHash": "ea442edb28d203b8b0d0775bf18b9d95",
+      "sourceName": "contracts/Token2.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Token2"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Token1.sol": {
+      "lastModificationDate": 1623462310628,
+      "contentHash": "815a776f19c33d38406567daa410eea8",
+      "sourceName": "contracts/Token1.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Token1"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Lender.sol": {
+      "lastModificationDate": 1623462310626,
+      "contentHash": "e3845b293fcf213bb05397cb340c6d0e",
+      "sourceName": "contracts/Lender.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/SafeERC20.sol",
+        "./interfaces/iERC20.sol",
+        "./interfaces/iDAO.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iRESERVE.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iSYNTH.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Lender"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Synth.sol": {
+      "lastModificationDate": 1623464822108,
+      "contentHash": "ea4eb10de9e3d109956a7d95c5394a6f",
+      "sourceName": "contracts/Synth.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iERC677.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Synth"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Factory.sol": {
+      "lastModificationDate": 1623464925378,
+      "contentHash": "32aba9e2d666ef19bfe0965554f6ef7f",
+      "sourceName": "contracts/Factory.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Synth.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Factory"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\interfaces\\iVETHER.sol": {
+      "lastModificationDate": 1623462310635,
+      "contentHash": "1b2e429bd4fc5166bfeff9a686957eb1",
+      "sourceName": "contracts/interfaces/iVETHER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVETHER"
+      ]
+    },
+    "E:\\PROJ\\vader protocol\\vaderprotocol-contracts\\contracts\\Vether.sol": {
+      "lastModificationDate": 1623462310629,
+      "contentHash": "7bfd92296b29e82ba2b33209702f212e",
+      "sourceName": "contracts/Vether.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iVETHER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Vether"
+      ]
+    }
+  }
+}
